@@ -75,10 +75,10 @@ col1, col2, col3 = st.columns([1, 8, 1])
 with col2:
     st.title("🌐 Non-English Document Summariser")
     st.subheader("Disclaimer")
-    st.write("Please note: The summaries generated are based on machine translation and natural language processing techniques. They may not capture nuanced meanings perfectly.    st.write("---")  # Adding a visual break
+    st.write("Please note: The summaries generated are based on machine translation and natural language processing techniques. They may not capture nuanced meanings perfectly.")
     st.write("---")  # Adding a visual break
 
-    st.header("Upload your non-English documents in Image, PDF or text format below")
+    st.header("Upload your non-English documents in Image, PDF, or text format below")
     uploaded_files = st.file_uploader("Choose files", type=["jpg", "jpeg", "png", "mp4", "pdf", "mp3", "wav"], accept_multiple_files=True)
     if uploaded_files:
         file_contents = [file.read() for file in uploaded_files]
